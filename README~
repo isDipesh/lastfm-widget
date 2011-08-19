@@ -1,0 +1,31 @@
+Last.fm widget for your website
+
+Built on javascript
+Shows Last played tracks from last.fm for a user
+Also shows now playing track. :)
+
+Integration:
+1. Add 
+	<script type="text/javascript" src="last_widget.js"></script> 
+	to <head> section of HTML.
+	Or just before </body> if you want the script to function after the complete page load, so that other don't get slowed down.
+
+2. Insert :
+	<table id="last_tracks"></table>
+	where you want the script to write the track lists.
+	See index.html for example
+
+3. Edit first line of last_widget.js:
+	var username = 'xtranophilist';
+	Replace xtranophilist with your last.fm username
+
+You are done.
+
+To Dos:
+
+1. Use <div> instead of <table>
+	Any contribution would be appreciated.
+
+2. Better styling
+
+3. Find a way to get the feed direct from Last.fm (w/o using Yahoo Pipe as Proxy for JSON)
