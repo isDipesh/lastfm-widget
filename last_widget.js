@@ -41,7 +41,7 @@ function relative_time(time_value) {
 }
 function processLast(feed){
     var tracks= feed.value.items[0].recenttracks.track;
-    str='';
+    var str='';
     for (var i=0;i<10;i++){
         str+='<tr><td class="last_img">';
         if(tracks[i].image[0].content) str+='<img src="'+tracks[i].image[0].content+'" width="34" height="34" alt="">';
